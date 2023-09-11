@@ -1,24 +1,18 @@
-import type { Metadata } from 'next'
-import styles from './styles.module.css'
-
+import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: 'Users',
-  description: 'Users page',
-}
+  title: "Users",
+  description: "Users page",
+};
 
 export default function AboutLayout({
-    children,
-  }: {
-    children: React.ReactNode
-  }) {
-    return (
+  children,
+}: {
+  children: React.ReactNode;
+}) {
+  return (
     <>
-    <nav>About NavBar</nav>
-    <main className={styles.main}>
-        {children}
-    </main>
+      <main>{children}</main>
     </>
-    )
-  }
-  
+  );
+}
