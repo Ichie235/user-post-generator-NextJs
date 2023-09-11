@@ -1,6 +1,6 @@
-@tailwind base;
+/* @tailwind base;
 @tailwind components;
-@tailwind utilities;
+@tailwind utilities; */
 
 :root {
   --foreground-rgb: 0, 0, 0;
@@ -24,4 +24,12 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
+    padding: 1rem;
+}
+.nav-links-container{
+  display: flex;
+  justify-self: center;
+  text-align: center;
+  padding: 1rem;
+  gap: 1em;
 }
